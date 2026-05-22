@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - NODE_VER=24
+    volumes:
+      - ..:/workspace/tco-app-frontend:cached
+    user: node
+    command: sleep infinity
+    ports:
+      - '5173:5173'

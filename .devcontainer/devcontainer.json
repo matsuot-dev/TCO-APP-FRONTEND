@@ -1,0 +1,17 @@
+{
+  "name": "tco-app-frontend",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "frontend",
+  "workspaceFolder": "/workspace/tco-app-frontend",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "remoteUser": "node",
+  "postCreateCommand": "npm install",
+  "forwardPorts": [5173]
+}
